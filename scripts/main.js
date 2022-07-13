@@ -110,7 +110,7 @@
 			var nMajorV = Number(version.split('.')[0]);
 			var nMinorV = Number(version.split('.')[1]);
 			if (sMethod === "AddOleObject") {
-				if ((version === "develop" || (nMajorV >= 7 && nMinorV >= 2)) && window.Asc.plugin.info.editorType === "word") {
+				if ((version === "" || (nMajorV >= 7 && nMinorV >= 2)) && window.Asc.plugin.info.editorType === "word") {
 					oParams.height = oParams.height * 36000.0; // convert to EMU
 					oParams.width  = oParams.width * 36000.0; // convert to EMU
 
